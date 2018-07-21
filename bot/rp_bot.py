@@ -80,6 +80,7 @@ def on_message(message):
 
     print(str(user + " (" + server_msg + ") [" + chan_msg + "] : " + rep))
 
+
     if ranks and not pm:
         open("msgs_user_" + server_msg + ".txt", "a").close()
         msgs = open("msgs_user_" + server_msg + ".txt", "r")
