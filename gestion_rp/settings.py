@@ -25,7 +25,7 @@ SECRET_KEY = 'ey+f&jbrknm)+1!rwsy3=@(y+o3#fzrmhmfsl3i06iak6++w09'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -128,7 +128,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
-STATIC_ROOT = os.path.join("/var/www/website", "static")
+STATIC_ROOT = os.path.join("/var/www/gestion_rp", "static")
 
-MEDIA_ROOT = os.path.join("media")
+MEDIA_ROOT = os.path.join("/var/www/gestion_rp", "media")
 MEDIA_URL = '/media/'

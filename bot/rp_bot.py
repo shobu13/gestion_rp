@@ -11,10 +11,12 @@ import discord
 import os
 import requests
 import random
+import sys
 
 import django
 from django.core.files import File
 
+sys.path[:0] = ['../']
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gestion_rp.settings')
 django.setup()
 
@@ -76,7 +78,7 @@ def on_message(message):
         command = ""
         params = ""
 
-    print(user + " (" + server_msg + ") [" + chan_msg + "] : " + rep)
+    print(str(user + " (" + server_msg + ") [" + chan_msg + "] : " + rep))
 
     if ranks and not pm:
         open("msgs_user_" + server_msg + ".txt", "a").close()
