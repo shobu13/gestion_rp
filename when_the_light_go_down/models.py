@@ -6,7 +6,8 @@ class Fiche(models.Model):
     nom_perso = models.CharField(max_length=100, blank=True)
     prenom_perso = models.CharField(max_length=100, blank=True)
     description_perso = models.TextField(default="", blank=True)
-    photo = models.ImageField(upload_to='wtlgd/perso', blank=True, null=True)
+    photo = models.ImageField(upload_to='wtlgd/perso', blank=True, null=True,
+                              default='img/054.jpg')
     connaissance = models.IntegerField(default=10)
 
     validation = models.BooleanField(default=False)
