@@ -33,7 +33,7 @@ client = discord.Client()
 ver = "1.3.0"
 lang = "fr"
 
-site_host = 'gestion-rp.ezo2.eu'
+site_host = 'localhost:8000'
 
 
 @client.event

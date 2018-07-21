@@ -130,5 +130,5 @@ STATICFILES_DIRS = (
 
 STATIC_ROOT = os.path.join("/var/www/gestion_rp", "static")
 
-MEDIA_ROOT = os.path.join("/var/www/gestion_rp", "media")
+MEDIA_ROOT = os.path.join("media")
 MEDIA_URL = '/media/'
