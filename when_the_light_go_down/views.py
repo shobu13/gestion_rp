@@ -35,11 +35,23 @@ def fiche_render(request):
         return render(request, 'when_the_light_go_down/fiche_render.html', locals())
 
 
-def tableau_prix(request):
-    return render(request, 'when_the_light_go_down/html_prix.html')
+def menu_wtlgd(request):
+    return render(request, 'when_the_light_go_down/menu_wtlgd.html')
 
+def villes(request):
+    return render(request, 'when_the_light_go_down/villes.html')
 
-
-
-def tableau_salaire(request):
-    return render(request, 'when_the_light_go_down/html_salaires.html')
+def magie(request):
+    return render(request, 'when_the_light_go_down/magie.html')
+	
+def prologue_genese(request):
+    return render(request, 'when_the_light_go_down/prologue_genese.html')			
+	
+def race(request):
+    return render(request, 'when_the_light_go_down/race.html')
+	
+def salaire_foncier(request):
+    return render(request, 'when_the_light_go_down/salaire_foncier.html')		
+	
+def table_prix(request):
+    return render(request, 'when_the_light_go_down/table_prix.html')	

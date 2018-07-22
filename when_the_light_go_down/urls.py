@@ -20,8 +20,13 @@ from when_the_light_go_down import views
 urlpatterns = [
     path('fiche_hash', views.fiche_hash, name='fiche_hash'),
     path('fiche', views.fiche_render, name='fiche_render'),
-    path('tableau_prix', views.tableau_prix, name='tableau_prix'),
-	path('tableau_salaire', views.tableau_salaire, name='tableau_salaire')
+    path('menu_wtlgd', views.menu_wtlgd, name='menu_wtlgd'),
+	path('villes', views.villes, name='villes'),
+	path('table_prix', views.table_prix, name='table_prix'),
+	path('prologue_genese', views.prologue_genese, name='prologue_genese'),
+	path('salaire_foncier', views.salaire_foncier, name='salaire_foncier'),
+	path('magie', views.magie, name='magie'),
+	path('race', views.race, name='race')
 ]
 
     
