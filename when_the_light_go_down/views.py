@@ -37,3 +37,9 @@ def fiche_render(request):
 
 def tableau_prix(request):
     return render(request, 'when_the_light_go_down/html_prix.html')
+
+
+
+
+def tableau_salaire(request):
+    return render(request, 'when_the_light_go_down/html_salaires.html')
