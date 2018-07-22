@@ -20,4 +20,5 @@ from when_the_light_go_down import views
 urlpatterns = [
     path('fiche_hash', views.fiche_hash, name='fiche_hash'),
     path('fiche', views.fiche_render, name='fiche_render'),
+    path('tableaux_prix', views.tableau_prix, name='tableau_prix')
 ]

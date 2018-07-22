@@ -22,7 +22,7 @@ from gestion_rp import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('when_the_light_go_down.urls'))
+    path('wtlgd/', include('when_the_light_go_down.urls'))
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += staticfiles_urlpatterns()

@@ -33,3 +33,7 @@ def fiche_render(request):
         return render(request, 'when_the_light_go_down/fiche_edit.html', locals())
     else:
         return render(request, 'when_the_light_go_down/fiche_render.html', locals())
+
+
+def tableau_prix(request):
+    return render(request, 'when_the_light_go_down/html_prix.html')
